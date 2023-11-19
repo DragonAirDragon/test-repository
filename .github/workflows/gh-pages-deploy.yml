@@ -3,35 +3,17 @@ name: Deploy to GitHub Pages
 on:
   push:
       branches: [ main ]
+
+
 jobs:
-  # Build job
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Source
         uses: actions/checkout@v2
 
-      - name: Set up Node
-        uses: actions/setup-node@v2
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          node-version: '16' # Используйте версию Node.js, необходимую для вашего проекта
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run build # Замените на команду, которая строит ваш проект
-
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # Укажите папку, в которую происходит сборка проекта
+          branch: gh-pages  # The branch the action should deploy to.
+          folder: ./build  # The folder the action should deploy.
