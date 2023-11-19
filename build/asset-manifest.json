@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.d3926cfa.js",
-    "static/js/787.a86f3764.chunk.js": "/static/js/787.a86f3764.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.d3926cfa.js.map": "/static/js/main.d3926cfa.js.map",
-    "787.a86f3764.chunk.js.map": "/static/js/787.a86f3764.chunk.js.map"
+    "main.css": "/test-repository/static/css/main.073c9b0a.css",
+    "main.js": "/test-repository/static/js/main.f2611800.js",
+    "static/js/787.a86f3764.chunk.js": "/test-repository/static/js/787.a86f3764.chunk.js",
+    "static/media/logo.svg": "/test-repository/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/test-repository/index.html",
+    "main.073c9b0a.css.map": "/test-repository/static/css/main.073c9b0a.css.map",
+    "main.f2611800.js.map": "/test-repository/static/js/main.f2611800.js.map",
+    "787.a86f3764.chunk.js.map": "/test-repository/static/js/787.a86f3764.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.d3926cfa.js"
+    "static/js/main.f2611800.js"
   ]
 }
