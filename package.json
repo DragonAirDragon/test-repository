@@ -15,9 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "dist": "npm run build &&  cp -a build/. dist",
-    "lint": "eslint src/**.js",
-    "deploy": "gh-pages -d dist"
+    "lint": "eslint src/**.js"
   },
   "eslintConfig": {
     "extends": [
