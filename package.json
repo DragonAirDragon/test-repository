@@ -20,6 +20,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "repository": {
+    "url": "https://github.com/DragonAirDragon/test-repository"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -42,7 +45,11 @@
     ]
   },
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/github": "^9.2.3",
+    "@semantic-release/release-notes-generator": "^12.1.0",
     "eslint": "^8.50.0",
-    "gh-pages": "^6.1.0"
+    "gh-pages": "^6.1.0",
+    "semantic-release": "^22.0.8"
   }
 }
