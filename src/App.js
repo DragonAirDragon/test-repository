@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const greeting = "Ищенко Никита Николаевич 9";
+  const greeting = "Ищенко Никита Николаевич release";
   return (
     <div className="App">
      <header className="App-header">
