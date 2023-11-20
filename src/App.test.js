@@ -3,6 +3,6 @@ import App from './App';
 
 test('renders greeting message', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Ищенко Никита Николаевич 9/i);
+  const linkElement = screen.getByText(/Ищенко Никита Николаевич release 1/i);
   expect(linkElement).toBeInTheDocument();
 });
